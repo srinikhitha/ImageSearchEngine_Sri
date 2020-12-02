@@ -14,7 +14,7 @@ export const advanceUserSearch = async ( fields, q)=> {
     //   const response = axios.post(
     //     `http://localhost:9200/images/_doc/${queryV}`,
     //     {
-    //         "query": {"match": {"object": "dental implant"} },
+    //         "query": {"match": {"object": "dental implant", "figid": q, } },
     //         "sort": [
     //             {"_id": "asc" }
     //         ]
