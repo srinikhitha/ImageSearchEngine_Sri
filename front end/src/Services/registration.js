@@ -27,8 +27,8 @@ export const userLogin = async (data) => {
       `http://localhost:40507/api/UserProfile?LoginId=${data.username}&Password=${data.password}`
     );
 
-    console.log(response.status)
-    return response.status;
+    console.log(response.status);
+    return response;
   } catch (error) {
     return null;
   }
